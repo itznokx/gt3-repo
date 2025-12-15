@@ -1,0 +1,109 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+}
+h1 {
+    font-size: 2.5em;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+#nav-header{
+    height: 100px;
+    align-content: center;
+    width: 100vw;
+    background-color: gray;
+}
+.nav-li{
+    float: left;
+    padding: 10px;
+    list-style-type: none;
+}
+main {
+    display: flexbox;
+    justify-items: center;
+    width: 100vw;
+    background-color: black;
+}
+.section-main{
+    width: 50%;
+    display: flexbox;
+    justify-items: center;
+    color: aliceblue;
+}
+#skills-list{
+    justify-content: center ;
+    color: rgb(209, 103, 103);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 50%;
+}
+#skills-list ul{
+    font-size: 0.9em;
+    border-right: solid 1px;
+    border-left: solid 1px;
+    align-items: center;
+    justify-items: center;
+    border-color: antiquewhite;
+    list-style-type:"-";
+}
+.skills-list-title {
+    font-size: 1.5em;
+    color: blanchedalmond;
+}
+#projects-div{
+    max-height: 160px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.projects-div-item{
+    display: block;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.projects-div-item img{
+    height: 128px;
+    width: 128px;
+    background-color: white;
+    border: 5px solid firebrick;
+    border-radius: 50%;
+}
+.section-h2 {
+    font-size: 2em;
+    font-family: "Rubik",sans-serif;
+    justify-self: center;
+}
+#section-skills{
+    display: grid;
+}
+#network-div{
+    max-height: 160px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.network-div-item{
+    display: block;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.network-div-item img{
+    height: 128px;
+    width: 128px;
+    background-color: white;
+    border: 5px solid firebrick;
+    border-radius: 50%;
+}
+footer {
+    width: 100vw;
+    height: 300px;
+    background-color: darkslategray;
+}
