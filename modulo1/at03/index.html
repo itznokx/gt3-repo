@@ -1,12 +1,134 @@
+<!---
+    Atividade Prática: Criando um Portfólio Simples
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
     <title>Modulo 1 - Atividade 03</title>
+    <style>
+        h2{
+            color: aliceblue;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header id="header-port">
+        <nav id="nav-header">
+            <li class="nav-li">
+                <a href="#section-about-me"><button class="header-button">Sobre mim</button></a>
+            </li>
+            <li class="nav-li">
+                <a href="#section-skills"><button class="header-button">Habilidades</button></a>
+            </li>
+            <li class="nav-li">
+                <a href="#section-projects"><button class="header-button">Projetos</button></a>
+            </li>
+            <li class="nav-li">
+                <a href="#section-networks"><button class="header-button">Outras Redes</button></a>
+            </li>
+        </nav>
+    </header>
+    <main id="main_port">
+        <h1 style="color: firebrick;">Dimitri Medeiros</h1>
+        <p style="color: aliceblue; justify-self: center;">Backend Developer / Security Engineer (Blue Team)</p>
+        <hr style="width: 100%;margin-top: 20px;">
+        <section class="section-main" id="section-about-me">
+            <h2 class="section-h2">Sobre Mim</h2>
+            <div class="bio">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis augue augue. Proin dapibus fringilla diam at faucibus. Quisque in porta ligula, ut gravida augue. Ut non nibh ex. Vestibulum quam dui, vehicula a tortor ut, luctus condimentum turpis. Phasellus ac dolor a est consequat ultricies. Suspendisse est tellus, sagittis ac justo id, laoreet aliquam dui. Fusce sed imperdiet leo. Ut fermentum ante eu pellentesque rutrum. Nullam quis convallis mauris. Nam in sapien eleifend, ornare nibh nec, laoreet quam. Pellentesque nec vestibulum justo. Curabitur eu porttitor erat. Pellentesque vehicula nibh nec orci mollis semper. Nam eget maximus nisl. Mauris ac elementum augue.
+<br><br>
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean vitae enim eu erat congue vehicula at et libero. Quisque pharetra pharetra dui et interdum. Etiam ullamcorper iaculis interdum. Duis est felis, aliquam at nibh nec, sodales iaculis orci. Fusce suscipit leo in est volutpat, in porta justo facilisis. Aenean consectetur bibendum blandit. Curabitur et mollis purus. Curabitur viverra, eros et accumsan condimentum, odio diam porta neque, quis ultricies turpis orci et augue.
+<br><br>
+Duis lacinia, felis in rhoncus tristique, nibh urna dictum quam, eu consequat risus elit eget ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis ante nisi, in cursus quam elementum non. Nunc vehicula bibendum leo, ac rutrum augue tempor in. Nam non nulla ornare, euismod mi sit amet, efficitur nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque posuere arcu sapien, sit amet commodo magna suscipit ut. Fusce dictum gravida eros in laoreet. In fringilla, odio non lobortis consequat, augue eros vulputate nisi, eget dignissim nulla mi in enim. Quisque rhoncus, ante ut dignissim accumsan, elit nisl faucibus risus, sit amet fringilla magna risus vel dolor.
+<br><br>
+Phasellus non tempor turpis, ac consectetur libero. Nam eget lorem scelerisque, blandit metus sit amet, iaculis quam. Nunc volutpat aliquet turpis, at laoreet elit consectetur at. Praesent tincidunt, justo sed ultricies lobortis, eros nunc auctor dolor, sit amet bibendum leo quam vitae metus. Praesent et malesuada lorem. Donec nisl nulla, bibendum at odio a, hendrerit sodales velit. Mauris imperdiet, mauris quis fermentum porta, orci diam euismod lectus, nec vulputate dolor felis vitae diam.
+<br><br>
+Cras ultrices dui vel justo iaculis, vehicula rutrum libero lobortis. Mauris in vehicula lacus. Ut luctus erat a augue facilisis, quis posuere nulla consequat. Aenean vitae sem ut neque eleifend accumsan ac in ante. Maecenas condimentum ipsum at pulvinar facilisis. Nulla enim sapien, molestie eu justo quis, hendrerit aliquet metus. Donec justo ipsum, tristique convallis dui a, mattis cursus ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec blandit massa vel mi ultricies bibendum. Vestibulum pretium elit nec nisl imperdiet, eget sodales lectus malesuada. Morbi sed ullamcorper mi, ultrices viverra orci. Suspendisse ultrices diam vel mollis consectetur. Donec ullamcorper, metus quis rhoncus fermentum, tortor lectus tristique libero, vitae egestas ligula sem et purus. Praesent pulvinar rhoncus molestie. Quisque ornare consectetur libero, eu malesuada justo.</p>
+            </div>
+        </section>
+        <hr style="width: 100%;margin-top: 20px;">
+        <section class="section-main" id="section-skills">
+            <h2 class="section-h2">Habilidades</h2>
+            <div id="skills-list">
+                <ul>
+                    <h3 class="skills-list-title">Hard Skills</h3>
+                    <li>C/C++</li>
+                    <li>Html/CSS</li>
+                    <li>Javascript</li>
+                    <li>Python</li>
+                    <li>SQL/PostgreSQL</li>
+                    <li>Lua</li>
+                    <li>Git/Github</li>
+                    <li>Postman</li>
+                    <li>Ghidra</li>
+                    <li>GDB</li>
+                    <li>Linux</li>
+                    <li>Apache</li>
+                    <li>Spring Boot</li>
+                </ul>
+                <ul>
+                    <h3 class="skills-list-title">Soft Skills</h3>
+                    <li>Trabalho em equipe</li>
+                    <li>Metodologias Ágeis</li>
+                    <li>Proatividade</li>
+                    <li>Boa comunicação</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section-main" id="section-projects">
+            <h2 class="section-h2">Projetos</h2>
+            <div class="bio" id="projects-div">
+                <div class="projects-div-item">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/718/small_2x/discord-logo-discord-icon-transparent-free-png.png">
+                    <p>
+                        <a href="https://github.com/itznokx/youtube_discord_bot">Discord Bot</a>
+                    </p>
+                </div>
+                <div class="projects-div-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
+                    <p>
+                        <a href="https://github.com/itznokx/youtube_discord_bot">Currency Converter</a>
+                    </p>
+                </div>
+                <div class="projects-div-item">
+                    <img src="https://blindedcyclops.neocities.org/p5js-icons/p5-sq-white-background.png">
+                    <p>
+                        <a href="https://github.com/itznokx/MFPJ/tree/master/final_project">Collision Detector</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section-main" id="section-networks">
+            <h2 class="section-h2">Outras Redes</h2>
+            <div class="bio">
+                <p>Minhas outras redes para contato</p>
+            </div>
+             <div class="bio" id="network-div">
+                <div class="network-div-item">
+                    <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png">
+                    <p>
+                        <a href="https://github.com/itznokx">Github</a>
+                    </p>
+                </div>
+                <div class="network-div-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png">
+                    <p>
+                        <a href="https://www.linkedin.com/in/dimitrimedeiros/">Linkedin</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer style=" margin-top: 20px;">
+        <button style="display: none;">Up</button>
+    </footer>
 </body>
 </html>
