@@ -33,10 +33,12 @@ footer {
     padding: 10px 0px 10px 0px;
 }
 #title-header-div {
+    padding: 10px;
+    font-size: 0.8em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    display: flex;
-    justify-content: center;
+    display: flexbox;
+    justify-items: center;
     background-color: darkmagenta;
     width: 100%;
 }
