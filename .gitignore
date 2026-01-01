@@ -2,4 +2,4 @@
 .vscode
 *.zip
 *.rar
-
+node_modules/
