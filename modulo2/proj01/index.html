@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modulo 2 - Projeto 01</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="color.css"
 </head>
 <body>
     <header>
@@ -17,23 +18,27 @@
         <section id="task-section">
             <div id="task-section-header">
                 <h2 id="h2-task-title"> Lista de Tarefas</h2>
-                <button>Nova Tarefa</button>
+                <button class="generic-base-button">Nova Tarefa</button>
             </div>
             <div id="task-section-main">
                 <h6 id="task-number">AAAAAAAAAAAAAAAAA</h6>
             </div>
         </section>
-        <section id="overlay"></section>
-        <div class="modal">
-            <form>
-                <h3>Criar Modal</h3>
-                <label for="form-titulo-input" class="modal-label">Título</label>
-                <input type="text" class="modal-input" id="form-titulo-input">
-                <label for="form-desc-input" class="modal-label">Descrição</label>
-                <textarea id="form-desc-input" class="modal-input"></textarea>
-                <button id="form-button-submite" type="submit">Criar</button>
-            </form>
-        </div>
+        <section id="overlay">
+            <div class="modal">
+                <form>
+                    <div class="modal-header">
+                        <h3 id="modal-title">Criar Modal</h3>
+                        <button class="generic-base-button">X</button>
+                    </div>
+                    <label for="form-titulo-input" class="modal-label">Título</label>
+                    <input type="text" class="modal-input" id="form-titulo-input">
+                    <label for="form-desc-input" class="modal-label">Descrição</label>
+                    <textarea id="form-desc-input" class="modal-input"></textarea>
+                    <button id="form-button-submit" class="generic-base-button" type="submit">Criar</button>
+                </form>
+            </div>
+        </section>
     </main>
     <script src="main.js"></script>
 </body>

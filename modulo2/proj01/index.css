@@ -5,8 +5,14 @@
     text-decoration: none;
     outline: none;
 }
+:root {
+    --primary-base-color: brown;
+    --secondary-base-color: antiquewhite;
+    --primary-text-color: white;
+    --secondary-text-color: gray;
+}
 header{
-    background-color: brown;
+    background-color: var(--primary-base-color);
     padding: 10px;
     max-width: 100%;
     height: 100px;
@@ -36,18 +42,19 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: var(--primary-text-color);
     background-color: black;
     padding: 30px 120px;
 }
 #h2-task-title {
     
-    font-size: 3em;
+    font-size: 3em;  
 }
-#task-section-header button{    
-    border-radius: 5px;
+.generic-base-button{
+    border-radius: 2px;
+    border: 2px solid var(--primary-base-color);
     white-space: no-wrap;
-    color: white;
+    color: var(--primary-text-color);
     font-size: 1.5em;
     text-transform: uppercase;
     padding: 5px;
@@ -55,12 +62,11 @@ header{
     cursor: pointer;
     transition-duration: 150ms;
 }
-#task-section-header button:hover{    
-    border-radius: 5px;
+.generic-base-button:hover{
+    border: 2px solid var(--primary-base-color);
     white-space: no-wrap;
-    background-color: antiquewhite;
-    color: brown;
-    font-size: 1.80em;
+    background-color: var(--secondary-base-color);
+    color: var(--primary-base-color);
     text-transform: uppercase;
     padding: 5px;
 }
@@ -70,7 +76,7 @@ header{
     justify-self: center;
 }
 #overlay {
-    display: flex;
+    visibility:visible;
     background-color: #00000070;
     width: 100%;
     height: 100%;
@@ -78,10 +84,16 @@ header{
     top: 0;
     left: 0;
     z-index: 1;
+    opacity: 100;
+}
+#overlay.active{
+    opacity: 1;
+    visibility: visible;
 }
 .modal {
+    display: flex;
     width: 400px;
-    background-color: white;
+    background-color: var(--secondary-base-color);
     padding: 16px;
     border-radius: 10px;
     position: fixed;
@@ -90,27 +102,44 @@ header{
     transform: translate(-50%,50%);
     z-index: 2;
 }
+#modal-title{
+    float: right;
+    width: 60%;
+    margin-bottom: 16px;
+}
+.modal-header{
+    align-items: center;
+}
+.modal-header button{
+    float: right;
+    margin-left: auto;
+    height: 50%
+    text-align: center;
+    font-size: 1em;
+    align-items: end;
+}
 .modal-label {
-    display: block;
+    width: 100%;
+    background-color: aqua;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.75px;
     text-transform: uppercase;
-    margin: 0px 0px 0px 5px;
+    margin: 0px 5px 0px 5px;
+    text-align: left;
 }
 .modal-input {
-    width: 100%;
+    max-width: 80%;
+    display: block;
     height: 48px;
     border: 2px solid black;
     border-radius: 5px;
     margin-bottom: 16px;
-    padding-left: 10px;
+    padding: 0px 10px 0px 10px;
+    text-align: left;
+    resize: none;
 }
 .modal-input:focus{
-    width: 100%;
     height: 48px;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-bottom: 16px;
-    padding-left: 10px;
+    border: 2px solid var(--primary-base-color);    
 }
