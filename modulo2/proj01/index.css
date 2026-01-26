@@ -11,7 +11,7 @@
     --primary-text-color: white;
     --secondary-text-color: gray;
 }
-header{
+header{ 
     background-color: var(--primary-base-color);
     padding: 10px;
     max-width: 100%;
@@ -85,61 +85,81 @@ header{
     left: 0;
     z-index: 1;
     opacity: 100;
+    transition-duration: 100ms;
 }
 #overlay.active{
     opacity: 1;
     visibility: visible;
 }
 .modal {
-    display: flex;
     width: 400px;
     background-color: var(--secondary-base-color);
-    padding: 16px;
+    padding: 10px;
     border-radius: 10px;
     position: fixed;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%,50%);
     z-index: 2;
 }
 #modal-title{
-    float: right;
-    width: 60%;
     margin-bottom: 16px;
 }
 .modal-header{
-    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
-.modal-header button{
+#form-input-button{
+    height: 20px;
+    width: 20px;
+    position: relative;
     float: right;
     margin-left: auto;
-    height: 50%
-    text-align: center;
+    border: 2px solid var(--primary-base-color);
+    color: var(--primary-text-color);
     font-size: 1em;
-    align-items: end;
+    text-transform: lowercase;
+    padding: 0px;
+    background-color: var(--primary-base-color);
+    cursor: pointer;
+    transition-duration: 150ms;
+}
+#form-input-button:hover{
+    border: 2px solid var(--primary-base-color);
+    white-space: no-wrap;
+    background-color: var(--secondary-base-color);
+    color: var(--primary-base-color);
+}
+#form-tarefa {
+    flex-direction: row;
+    width: 100%;
+}
+#form-input-div {
+    display: flex;
+    flex-direction: column;
 }
 .modal-label {
-    width: 100%;
-    background-color: aqua;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.75px;
     text-transform: uppercase;
-    margin: 0px 5px 0px 5px;
+    margin: 10px 0px 10px 0px;
     text-align: left;
 }
 .modal-input {
-    max-width: 80%;
-    display: block;
     height: 48px;
+    max-width: 100%;
     border: 2px solid black;
     border-radius: 5px;
+    padding-left: 10px;
     margin-bottom: 16px;
-    padding: 0px 10px 0px 10px;
     text-align: left;
-    resize: none;
+    resize:none;
 }
 .modal-input:focus{
-    height: 48px;
     border: 2px solid var(--primary-base-color);    
+}
+#form-button-submit {
+    align-self: center;
+    justify-self: center;
 }
