@@ -25,14 +25,14 @@ body{
     list-style-type: none;
 }
 main {
-    display: flexbox;
+    display: flex;
     justify-items: center;
     width: 100vw;
     background-color: black;
 }
 .section-main{
     width: 50%;
-    display: flexbox;
+    display: flex;
     justify-items: center;
     color: aliceblue;
 }
