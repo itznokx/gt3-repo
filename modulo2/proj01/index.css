@@ -8,7 +8,7 @@
 :root {
     --primary-base-color: brown;
     --terc-base-color: black;
-    --secondary-base-color: antiquewhite;
+    --secondary-base-color: #e6e6e6;
     --primary-text-color: white;
     --secondary-text-color: gray;
 }
@@ -20,6 +20,9 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center ;
+}
+body {
+    background-color: var(--secondary-base-color);
 }
 #logo-div-header{
     width: 64px;
@@ -48,8 +51,12 @@ header{
     padding: 30px 120px;
 }
 #h2-task-title {
-    
-    font-size: 3em;  
+    font-size: 3em;
+    transition-duration: 200ms;
+    cursor: pointer;  
+}
+#h2-task-title:hover{
+    color: var(--primary-base-color)
 }
 .generic-base-button{
     border-radius: 2px;
@@ -166,4 +173,21 @@ header{
 #form-button-submit {
     align-self: center;
     justify-self: center;
+}
+#task-section-main {
+    justify-self: center;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+}
+.task-div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: whitesmoke;
+    width: calc(25% - 32px);
+    box-shadow: 0 5px 10px #00000070;
+    padding: 10px;
 }
