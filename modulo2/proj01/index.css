@@ -42,9 +42,6 @@ body {
     margin-left: 20px;
     text-align: center;
 }
-#task-section {
-    max-width: 100%;
-}
 #task-section-header {
     display: flex;
     align-items: center;
@@ -177,8 +174,11 @@ body {
     align-self: center;
     justify-self: center;
 }
+#task-section {
+    max-width: 100%;
+}
 #task-section-main {
-    justify-self: center;
+    background-color: red;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -189,8 +189,12 @@ body {
     gap: 16px;
     background-color: whitesmoke;
     width: calc(25% - 32px);
+    border-radius: 10px;
     box-shadow: 0 5px 10px #00000070;
     padding: 10px;
+}
+.class_description {
+    width: 100%;
 }
 .task-actions i{
     display: flex;

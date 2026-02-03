@@ -16,7 +16,7 @@
     </header>
     <div id="task-section-header">
         <h2 id="h2-task-title"> Lista de Tarefas</h2>
-        <button class="generic-base-button" onclick="novaTarefa()">Nova Tarefa</button>
+        <button class="generic-base-button" onclick="openPopupForm()">Nova Tarefa</button>
     </div>
     <main>
         <section id="task-section">
@@ -28,17 +28,17 @@
         </section>
         <section id="overlay">
             <div class="modal">
-                <form id="form-tarefa">
+                <form id="form-tarefa" onsubmit="newTask()">
                     <div class="modal-header">
                         <h3 id="modal-title">Criar Modal</h3>
-                        <button id="form-input-button" onclick="closeFormPopup()">x</button>
+                        <button id="form-input-button" type="button" onclick="closeFormPopup()">x</button>
                     </div>
                     <div id="form-input-div">
-                        <label for="form-titulo-input" class="modal-label">Título</label>
-                        <input type="text" class="modal-input" id="form-titulo-input">
-                        <label for="form-desc-input" class="modal-label">Descrição</label>
-                        <textarea id="form-desc-input" class="modal-input"></textarea>
-                        <button id="form-button-submit" class="generic-base-button" type="submit" onclick="submitPopupForm()">Criar</button>
+                        <label for="form_titulo_input" class="modal-label">Título</label>
+                        <input type="text" class="modal-input" id="form_titulo_input" required>
+                        <label for="form_desc_input" class="modal-label">Descrição</label>
+                        <textarea id="form_desc_input" class="modal-input" required></textarea>
+                        <button id="form-button-submit" class="generic-base-button" type="submit">Criar</button>
                     </div>
                 </form>
             </div>
