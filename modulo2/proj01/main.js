@@ -25,7 +25,7 @@ function inserirTarefas(listadetarefas) {
                 <h4 class="task-title">${task.title}</h4>
                 <p class="task-description">${task.description}</p>
                 <div class="task-actions">
-                    <i class="bx bx-trash"></i>
+                    <i class="bx bx-trash" onclick="deleteTask('${task.id}')"></i>
                 </div>
             </div>
         `;
@@ -48,5 +48,16 @@ function newTask(){
     .then(res=> console.log(res))
     closeFormPopup()
     searchTasks()
+}
+function deleteTask(id){
+    fetch(`http://localhost:3000/tasks/${id}`,{
+        method: "DELETE",
+
+    })
+    .then( res=> res.json())
+    .then( res=>{
+        searchTasks()
+        console.log(`Tarefa ${id} deletada com sucesso`)
+    })
 }
 searchTasks();
