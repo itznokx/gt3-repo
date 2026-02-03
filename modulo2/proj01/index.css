@@ -178,7 +178,6 @@ body {
     max-width: 100%;
 }
 #task-section-main {
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -196,9 +195,13 @@ body {
 .class_description {
     width: 100%;
 }
-.task-actions i{
+.task-actions {
     display: flex;
     justify-content: flex-end;
+}
+.task-actions i{
+    width: 20px;
+    display: flex;
     color: var(--secondary-text-color);
 }
 .task-actions i:hover{
