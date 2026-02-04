@@ -12,41 +12,33 @@
         <div id="logo-div-header">
             <p style="color: white;">Logo</p>
         </div>
-        <input id="search-bar-header" type="text" placeholder="Pesquise o título da tarefa">
+        <input id="search_bar_header" onkeyup="searchTask()" type="text" placeholder="Pesquise o título da tarefa">
     </header>
     <div id="task-section-header">
         <h2 id="h2-task-title"> Lista de Tarefas</h2>
-        <button class="generic-base-button" onclick="novaTarefa()">Nova Tarefa</button>
+        <button class="generic-base-button" onclick="openPopupForm()">Nova Tarefa</button>
     </div>
     <main>
         <section id="task-section">
             
             <h6 id="task-number"></h6>
             <div id="task-section-main">
-                <div class="task-div">
-                    <h4 class="task-title">Generic Task</h4>
-                    <p class="task-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum dui a egestas tristique. Donec eget elit semper, facilisis erat at, imperdiet purus. Quisque vitae sapien orci. Praesent mattis et justo ac aliquam. Morbi dignissim ante et nulla rhoncus lobortis. Ut at mauris feugiat, commodo nisi dignissim, vestibulum orci. Nam est massa, efficitur quis quam ut, elementum consectetur risus
-                            
-                    </p>
-                    <div class="task-actions">
-                        <i class="bx bx-trash"></i>
-                    </div>
-                </div>
+                
             </div>
         </section>
         <section id="overlay">
             <div class="modal">
-                <form id="form-tarefa">
+                <form id="form-tarefa" onsubmit="newTask()">
                     <div class="modal-header">
                         <h3 id="modal-title">Criar Modal</h3>
-                        <button id="form-input-button" onclick="closeFormPopup()">x</button>
+                        <button id="form-input-button" type="button" onclick="closeFormPopup()">x</button>
                     </div>
                     <div id="form-input-div">
-                        <label for="form-titulo-input" class="modal-label">Título</label>
-                        <input type="text" class="modal-input" id="form-titulo-input">
-                        <label for="form-desc-input" class="modal-label">Descrição</label>
-                        <textarea id="form-desc-input" class="modal-input"></textarea>
-                        <button id="form-button-submit" class="generic-base-button" type="submit" onclick="submitPopupForm()">Criar</button>
+                        <label for="form_titulo_input" class="modal-label">Título</label>
+                        <input type="text" class="modal-input" id="form_titulo_input" required>
+                        <label for="form_desc_input" class="modal-label">Descrição</label>
+                        <textarea id="form_desc_input" class="modal-input" required></textarea>
+                        <button id="form-button-submit" class="generic-base-button" type="submit">Criar</button>
                     </div>
                 </form>
             </div>

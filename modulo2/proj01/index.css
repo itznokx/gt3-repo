@@ -33,17 +33,14 @@ body {
     background-color: black;
     margin-right: 20px;
 }
-#search-bar-header{
+#search_bar_header{
     height: 40%;
     align-items: center;
     border-radius: 10px;
-    width: 50%;
+    width: 50%; 
     font-size: 1.5em;
     margin-left: 20px;
     text-align: center;
-}
-#task-section {
-    max-width: 100%;
 }
 #task-section-header {
     display: flex;
@@ -177,8 +174,10 @@ body {
     align-self: center;
     justify-self: center;
 }
+#task-section {
+    max-width: 100%;
+}
 #task-section-main {
-    justify-self: center;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -189,12 +188,20 @@ body {
     gap: 16px;
     background-color: whitesmoke;
     width: calc(25% - 32px);
+    border-radius: 10px;
     box-shadow: 0 5px 10px #00000070;
     padding: 10px;
 }
-.task-actions i{
+.class_description {
+    width: 100%;
+}
+.task-actions {
     display: flex;
     justify-content: flex-end;
+}
+.task-actions i{
+    width: 20px;
+    display: flex;
     color: var(--secondary-text-color);
 }
 .task-actions i:hover{
