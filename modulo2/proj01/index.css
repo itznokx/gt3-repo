@@ -33,7 +33,7 @@ body {
     background-color: black;
     margin-right: 20px;
 }
-#search-bar-header{
+#search_bar_header{
     height: 40%;
     align-items: center;
     border-radius: 10px;
