@@ -21,17 +21,17 @@
 
 ### Tela Inicial ( Sem Tarefas )
 
-![Tela Inicial Sem Tarefas](prints/1.png)
+![Tela Inicial Sem Tarefas](./prints/1.png)
 
 ### Tela De Criar Tarefa
 
-![Tela De Criar Tarefas](prints/2.png)
+![Tela De Criar Tarefas](./prints/2.png)
 
 ### Tela com Tarefas Criadas
 
-![Tela Com Tarefas Criadas](prints/3.png)
+![Tela Com Tarefas Criadas](./prints/3.png)
 
 ### Tela com Tarefas Filtradas pela Barra de Pesquisa
 
-![Tela com Tarefas Filtradas pela Barra de Pesquisa](prints/4.png)
+![Tela com Tarefas Filtradas pela Barra de Pesquisa](./prints/4.png)
 
