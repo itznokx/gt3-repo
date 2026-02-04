@@ -10,12 +10,12 @@
 
 ## Funcionalidades
 
-[x] Criar Tarefas
-[x] Excluir Tarefas
-[x] Buscar por tarefas pelo titulo 
-[ ] Buscar por tarefas pela descricao
-[ ] Responsividade
-[x] Script para rodar "backend" e frontend simultaneamente
+- [x] Criar Tarefas
+- [x] Excluir Tarefas
+- [x] Buscar por tarefas pelo titulo 
+- [ ] Buscar por tarefas pela descricao
+- [ ] Responsividade
+- [x] Script para rodar "backend" e frontend simultaneamente (npm run all)
 
 ## Imagens
 
