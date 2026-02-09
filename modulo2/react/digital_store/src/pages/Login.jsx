@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/inputicon';
 import 'primeflex/primeflex.css';
+
+
 const Login = () => {
   const navigate = useNavigate();
   const handleSubmit = (event) => {
@@ -13,20 +15,19 @@ const Login = () => {
     navigate('/dashboard');
   };
   return (
-    <div style={{ height: '100vh' }}>
-      <div style={{ width: '300px' }}>
-        <h3>Seja Bem-vindo</h3>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="email">Email</label> 
-            <InputText 
-                id="email" 
-                type="email" 
-                placeholder="email@domain.com" 
-            />
-          </div>
+      <div className="bg-green-500 h-screen flex align-items-center justify-content-center">
+        <form className="surface-500">
+            <h3>Seja Bem-vindo</h3>
             <div>
-                <label htmlFor="password">Senha</label> 
+                <label htmlFor="email" className='block'>Email</label> 
+                <InputText 
+                    id="email" 
+                    type="email"
+                    placeholder="email@domain.com" 
+                />
+            </div>
+            <div className="p-mb-2">
+                <label htmlFor="password" className='block'>Senha</label> 
                 <IconField>
                     <InputIcon className="pi pi-eye"> </InputIcon>
                     <InputText 
@@ -35,10 +36,9 @@ const Login = () => {
                     />
                 </IconField>
             </div>
-          <Button type="submit" label="Entrar" />
+            <Button type="submit" label="Entrar" />
         </form>
       </div>
-    </div>
   );
 };
 export default Login;
