@@ -1,0 +1,5 @@
+react-hook-form
+primereactprimeicons
+primeflex
+styled-components
+react-router-dom
