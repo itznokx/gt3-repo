@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import { useNavigate } from 'react-router-dom';
 import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/inputicon';
-import 'primeflex/primeflex.css';
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primeicons/primeicons.css";
+import "primeflex/primeflex.css";
 
 
 const Login = () => {
@@ -14,6 +16,8 @@ const Login = () => {
     event.preventDefault();
     navigate('/dashboard');
   };
+  const [showPassword, setPasswordVisibility] = useState(false) 
+
   return (
       <div className="bg-green-500 h-screen flex align-items-center justify-content-center">
         <form className="surface-500">
@@ -29,8 +33,12 @@ const Login = () => {
             <div className="p-mb-2">
                 <label htmlFor="password" className='block'>Senha</label> 
                 <IconField>
-                    <InputIcon className="pi pi-eye"> </InputIcon>
-                    <InputText 
+                    <InputIcon 
+                        className={ `pi ${showPassword ? 'pi-eye-slash' : 'pi-eye'} cursor-pointer`}
+                        onClick={ () => setPasswordVisibility(!showPassword)}
+                    />
+                    <InputText
+                        type={showPassword ? 'password' : 'text'}
                         id='password'
                         placeholder='********'
                     />
