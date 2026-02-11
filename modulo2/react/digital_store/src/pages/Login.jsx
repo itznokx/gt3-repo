@@ -21,7 +21,7 @@ const Login = () => {
 
   return (
       <div className="bg-green-500 h-screen flex align-items-center justify-content-center">
-        <form className="surface-500" onSubmit={handleSubmit(logAux)}>
+        <form className="surface-1000" onSubmit={handleSubmit(logAux)}>
             <h3>Seja Bem-vindo</h3>
             <div>
                 <label htmlFor="email" className='block'>Email</label> 
