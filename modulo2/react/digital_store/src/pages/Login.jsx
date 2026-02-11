@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
@@ -9,14 +9,22 @@ import {  useForm } from 'react-hook-form'
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
+import { ContextAuth } from '../contexts/AuthContext';
 
 
 const Login = () => {
-  const [showPassword, setPasswordVisibility] = useState(false) 
+  const [showPassword, setPasswordVisibility] = useState(false);
   const {register, handleSubmit } = useForm();
+  const { setLogged } = useContext(ContextAuth);
+  const navigate = useNavigate();
 
     function logAux (data){
         console.log(data)
+        if (data.email == "test@gmail.com" && data.password == "123456"){
+            
+            setLogged(true)
+            navigate('/home')
+        }
     }
 
   return (
