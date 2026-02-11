@@ -26,12 +26,12 @@ const Login = () => {
   return (
       <div>
         <form
-            className="bg-white shadow-lg rounded-xl flex flex-col gap-5 justify-center items-center" 
+            className="bg-sky-400 shadow-lg rounded-xl flex flex-col gap-5 justify-center items-center p-10 w-200 justify-self-center self-center" 
             onSubmit={handleSubmit(logAux)}
             >
             <h3>Seja Bem-vindo</h3>
-            <div className=''>
-                <label htmlFor="email" className='block'>Email</label> 
+            <div className=' bg-red-200 flex flex-col w-100 gap-3 p-2'>
+                <label htmlFor="email" className=''>Email</label> 
                 <InputText
                     className="pl-5"
                     id="email" 
@@ -40,10 +40,10 @@ const Login = () => {
                     {...register('email', {required: true})}
                 />
             </div>
-            <div>
+            <div className='bg-red-200 flex flex-col w-100 gap-3 p-2'>
                 <label htmlFor="password" className='block'>Senha</label> 
                 <IconField
-                    className='bg-red-300 flex items-center flex-row gap-5'
+                    
                 >
                     <InputText
                         type={showPassword ? 'password' : 'text'}
@@ -53,13 +53,13 @@ const Login = () => {
                         className='pl-5'
                     />
                     <InputIcon 
-                        className={ `pi ${showPassword ? 'pi-eye-slash' : 'pi-eye'} cursor-pointer`}
+                        className={ `pi ${showPassword ? 'pi-eye-slash' : 'pi-eye'} cursor-pointer ml-5`}
                         onClick={ () => setPasswordVisibility(!showPassword)}
                         
                     />
                 </IconField>
             </div>
-            <Button type="submit" label="Entrar" />
+            <Button className='border-red-500 border-radius-5' type="submit" label="Entrar" />
         </form>
       </div>
   );
