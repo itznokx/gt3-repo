@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import { InputText } from 'primereact/inputtext';
-import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
 import { useNavigate } from 'react-router-dom';
 import { IconField } from 'primereact/iconfield';
@@ -10,7 +9,7 @@ import { ContextAuth } from '../contexts/AuthContext';
 
 
 const Login = () => {
-  const [showPassword, setPasswordVisibility] = useState(false);
+  const [showPassword, setPasswordVisibility] = useState(true);
   const {register, handleSubmit } = useForm();
   const { setLogged } = useContext(ContextAuth);
   const navigate = useNavigate();
@@ -27,13 +26,14 @@ const Login = () => {
   return (
       <div>
         <form
-            className="bg-white shadow-lg rounded-xl p-8 flex flex-col gap-4" 
+            className="bg-white shadow-lg rounded-xl flex flex-col gap-5 justify-center items-center" 
             onSubmit={handleSubmit(logAux)}
             >
             <h3>Seja Bem-vindo</h3>
-            <div>
+            <div className=''>
                 <label htmlFor="email" className='block'>Email</label> 
-                <InputText 
+                <InputText
+                    className="pl-5"
                     id="email" 
                     type="email"
                     placeholder="email@domain.com"
@@ -42,17 +42,20 @@ const Login = () => {
             </div>
             <div>
                 <label htmlFor="password" className='block'>Senha</label> 
-                <IconField>
-                    <InputIcon 
-                        className={ `pi ${showPassword ? 'pi-eye-slash' : 'pi-eye'} cursor-pointer`}
-                        onClick={ () => setPasswordVisibility(!showPassword)}
-                        
-                    />
+                <IconField
+                    className='bg-red-300 flex items-center flex-row gap-5'
+                >
                     <InputText
                         type={showPassword ? 'password' : 'text'}
                         id='password'
                         placeholder='********'
                         {...register('password', {required: true})}
+                        className='pl-5'
+                    />
+                    <InputIcon 
+                        className={ `pi ${showPassword ? 'pi-eye-slash' : 'pi-eye'} cursor-pointer`}
+                        onClick={ () => setPasswordVisibility(!showPassword)}
+                        
                     />
                 </IconField>
             </div>

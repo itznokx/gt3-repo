@@ -1,7 +1,6 @@
 import Paths from "./routes/Paths";
 import React, { useState } from 'react'
 import "primeicons/primeicons.css";
-import "primeflex/primeflex.css";
 import { AuthContext } from "./contexts/AuthContext";
 import './tailwind.css';
 
