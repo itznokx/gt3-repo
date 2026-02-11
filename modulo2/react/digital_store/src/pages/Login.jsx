@@ -25,8 +25,11 @@ const Login = () => {
     }
 
   return (
-      <div className="bg-green-500 h-screen flex align-items-center justify-content-center">
-        <form className="surface-1000" onSubmit={handleSubmit(logAux)}>
+      <div>
+        <form
+            className="bg-white shadow-lg rounded-xl p-8 flex flex-col gap-4" 
+            onSubmit={handleSubmit(logAux)}
+            >
             <h3>Seja Bem-vindo</h3>
             <div>
                 <label htmlFor="email" className='block'>Email</label> 
@@ -37,7 +40,7 @@ const Login = () => {
                     {...register('email', {required: true})}
                 />
             </div>
-            <div className="p-mb-2">
+            <div>
                 <label htmlFor="password" className='block'>Senha</label> 
                 <IconField>
                     <InputIcon 
