@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Paths from './routes/Paths'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './index.css'
@@ -7,9 +8,7 @@ function App() {
 
   return (
     <>
-      <section id="main-section">
-        <h1>Teste</h1>
-      </section>
+      <Paths/>
     </>
   )
 }
