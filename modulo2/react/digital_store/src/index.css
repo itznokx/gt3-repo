@@ -9,21 +9,29 @@
     font-size: 1em;
 };
 
+#main-header {
+  display: flex;
+  padding: 5px 10px 0 10px;
+  background-color: var(--white-color);
+}
+#logo-div img{
+  background-color: aqua;
+  width: 243px;
+  height: 44px;
+}
+input {
+  padding: 10px;
+}
 body {
   min-height: 100vh; 
   width: 100%;
   background-color: var(--warning-color);
 };
-
-/* 640px = sm */
-@media (min-width: 640px) {
-  body {
-    background-color: var(--success-color);
-  }
-};
-
 /* 768px = md */
 @media (min-width: 768px) {
+  #main-header {
+    padding: 10px 20px 0 20px;
+  }
   body {
     background-color: var(--secondary-color);
   }
@@ -31,7 +39,10 @@ body {
 
 /**/
 @media (min-width: 1024px) {
+  #main-header {
+    padding: 30px 60px
+  }
   body {
-    background-color: var(--primary-color);
+    background-color: purple;
   }
 };
