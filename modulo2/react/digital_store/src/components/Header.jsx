@@ -7,11 +7,11 @@ const Header = () =>
             <>
                 <div 
                 id="main-header"
-                className="flex fixed w-full gap-1 flex-col"
+                className="flex fixed w-full gap-10 flex-col"
                 >   
                     <div 
                         id="up-div-header"
-                        className="grid grid-cols-10 gap-5 bg-amber-800"
+                        className="grid grid-cols-10 gap-5"
                     >
                         <Logo/>
                         <input 
