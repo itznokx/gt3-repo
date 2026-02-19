@@ -1,6 +1,7 @@
 import HeaderNav from "./HeaderNav";
 import Logo from "./Logo";
 import RedirectArea from "./RedirectArea";
+import SearchBar from "./SearchBar";
 const Header = () =>
     {
         return (
@@ -11,16 +12,13 @@ const Header = () =>
                 >   
                     <div 
                         id="up-div-header"
-                        className="flex flex-row gap-5 items-center"
+                        className="flex flex-row gap-10 items-center"
                     >
                         <Logo/>
-                        <input 
-                            id="search_bar_header" 
-                            type="text" 
-                            placeholder="Pesquise o produto aqui"
-                            className = "col-span-5 bg-(--light-gray-3) w-4.5/5 h-15 rounded-md text-(--light-gray) self-center"
+                        <SearchBar/>
+                        <RedirectArea
+                            cart_items={0}
                         />
-                        <RedirectArea/>
                     </div>
                     <div>
                         <HeaderNav/>

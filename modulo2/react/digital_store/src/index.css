@@ -19,6 +19,9 @@
   width: 243px;
   height: 44px;
 }
+#header-redirect {
+  font-size: 1.0rem;
+}
 input {
   padding: 10px;
 }

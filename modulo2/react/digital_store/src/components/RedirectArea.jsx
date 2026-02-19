@@ -1,31 +1,39 @@
 import { InputIcon } from 'primereact/inputicon';
-const RedirectArea = () => {
+const RedirectArea = ({cart_items}) => {
     return (
         <>
         <div
             id="header-redirect"
-            className="bg-white flex flex-row gap-5"
+            className="flex flex-row items-center h-20 bg-sky-300"
         >
-            <button 
-                id="register-button-header"
-                className='text-sm w-40 border-black border-4'
+            <div
+                className='flex flex-row w-70 bg-amber-700 gap-5 justify-center h-1/2 items-center p-0'
             >
-                Cadastre-se
-            </button>
-            <button 
-                id="entrar-button-header"
-                className='w-30 bg-(--primary-color) text-(--white-color) font-bold rounded-xl'
-            >Entrar
-            </button>
-            <div>
+                <button 
+                    id="register-button-header"
+                    type='button'
+                    className='w-1.5/4 border-black border-4'
+                >
+                    Cadastre-se
+                </button>
+                <button 
+                    id="entrar-button-header"
+                    className='w-1/3 h-9/10 bg-(--primary-color) text-(--white-color) font-bold rounded-md'
+                >Entrar
+                </button>
+            </div>
+            <div
+                className='flex flex-col w-20 items-center bg-green-500'
+            >
                 <div 
                     id='number-items-shopping-cart'
-                    className='w-4 h-4 rounded-full bg-(--primary-color) items-center justify-center'
+                    className='flex size-6 rounded-full bg-(--primary-color) items-center justify-center text-white'
                 >
-                    1
+                    <p className='text-xs'>{cart_items}</p>
                 </div>
                 <InputIcon
                     className='pi pi-shopping-cart'
+                    
                 />
             </div>
         </div>
