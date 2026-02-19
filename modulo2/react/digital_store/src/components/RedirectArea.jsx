@@ -5,21 +5,21 @@ const RedirectArea = ({cart_items}) => {
         <>
         <div
             id="header-redirect"
-            className="flex flex-row items-center w-[25%] h-full bg-sky-300 gap-5"
+            className="flex flex-row items-center w-[25%] h-full bg-sky-0 gap-5"
         >
             <div
-                className='flex flex-row w-[75%] bg-amber-700 gap-5 justify-center h-1/2 items-center'
+                className='flex flex-row w-[75%] bg-amber-0 gap-5 justify-center h-1/2 items-center'
             >
                 <button 
                     id="register-button-header"
                     type='button'
-                    className='w-[65%] hover:border-black border-4 text-(--dark-gray-2)'
+                    className='w-[65%] hover:underline cursor-pointer text-(--dark-gray-3)'
                 >
                     <p>Cadastre-se</p>
                 </button>
                 <button 
-                    id="entrar-button-header"
-                    className='bg-(--primary-color) text-(--white-color) font-bold rounded-md px-100'
+                    id="login-button-header"
+                    className='bg-(--primary-color) text-(--white-color) font-bold rounded-xl pl-10 pr-10 pt-2 pb-2'
                 >
                     <p>Entrar</p>
                 </button>
