@@ -11,7 +11,7 @@ const Header = () =>
                 >   
                     <div 
                         id="up-div-header"
-                        className="grid grid-cols-10 gap-5"
+                        className="flex flex-row gap-5 items-center"
                     >
                         <Logo/>
                         <input 

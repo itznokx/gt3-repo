@@ -4,11 +4,11 @@ const RedirectArea = () => {
         <>
         <div
             id="header-redirect"
-            className="col-span-3 bg-white flex flex-row gap-5"
+            className="bg-white flex flex-row gap-5"
         >
             <button 
                 id="register-button-header"
-                className='text-sm w-40'
+                className='text-sm w-40 border-black border-4'
             >
                 Cadastre-se
             </button>
