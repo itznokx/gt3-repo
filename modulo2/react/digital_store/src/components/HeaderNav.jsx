@@ -8,9 +8,9 @@ const HeaderNav = () => {
         <>
         <div
             id="header-navigation"
-            className="bg-amber-200"
+            className="bg-amber-00"
         >
-            <nav className="flex gap-5 list-none text-1xl">
+            <nav className="flex gap-10 list-none text-1xl text-(--dark-gray-3) ">
                 <NavLink
                     to="/"
                     className={({isActive})=>

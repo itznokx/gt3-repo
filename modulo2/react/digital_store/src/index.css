@@ -1,5 +1,9 @@
 @import "tailwindcss";
 @import "./var.css";
+@layer prime {
+  @import "primeicons/primeicons.css";
+}
+
 
 html,body,main {
     margin: 0;

@@ -25,7 +25,7 @@ const RedirectArea = ({cart_items}) => {
                 </button>
             </div>
             <div
-                className='flex flex-col w-[25%] items-center bg-green-300 relative'
+                className='flex flex-col w-[25%] items-center bg-green-00 relative'
             >
                 
                 <div 
@@ -35,7 +35,7 @@ const RedirectArea = ({cart_items}) => {
                     <p className='text-xs'>{cart_items}</p>
                 </div>
                 <img
-                    className=""
+                    className="mb-2"
                     src={IconShoppingCart}
                 />
                 
