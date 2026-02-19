@@ -8,13 +8,13 @@ const RedirectArea = () => {
         >
             <button 
                 id="register-button-header"
-                className='text-sm w-50'
+                className='text-sm w-40'
             >
                 Cadastre-se
             </button>
             <button 
                 id="entrar-button-header"
-                className='w-50 bg-(--primary-color) text-(--white-color) font-bold rounded-xl'
+                className='w-30 bg-(--primary-color) text-(--white-color) font-bold rounded-xl'
             >Entrar
             </button>
             <div>
