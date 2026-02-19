@@ -11,10 +11,12 @@
 
 #main-header {
   display: flex;
+  justify-content: center;
   padding: 5px 10px 0 10px;
   background-color: var(--white-color);
 }
-#logo-div img{
+#logo-header{
+  background-color: aqua;
   width: 243px;
   height: 44px;
 }

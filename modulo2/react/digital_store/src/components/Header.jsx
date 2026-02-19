@@ -18,7 +18,7 @@ const Header = () =>
                             id="search_bar_header" 
                             type="text" 
                             placeholder="Pesquise o produto aqui"
-                            className = "col-span-5 bg-(--light-gray-3) w-4.5/5 h-2/3 rounded-md text-(--light-gray) self-center"
+                            className = "col-span-5 bg-(--light-gray-3) w-4.5/5 h-15 rounded-md text-(--light-gray) self-center"
                         />
                         <RedirectArea/>
                     </div>
