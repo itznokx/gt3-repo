@@ -7,7 +7,13 @@ html,body,main {
     padding: 0;
     font-size: 1em;
 };
-
+.nav-active-link {
+  font-weight: bold;
+  text-decoration: solid underline var(--primary-color) 20px;
+  color: var(--primary-color);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
+}
 #main-header {
   display: flex;
   justify-content: center;
