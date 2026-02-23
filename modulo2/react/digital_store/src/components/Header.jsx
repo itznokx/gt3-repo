@@ -14,7 +14,9 @@ const Header = () =>
                         id="up-div-header"
                         className="flex flex-row gap-10 items-center"
                     >
-                        <Logo/>
+                        <Logo 
+                            logoLocal={"Header"}
+                        />
                         <SearchBar/>
                         <RedirectArea
                             cart_items={0}
