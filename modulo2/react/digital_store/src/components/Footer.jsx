@@ -2,33 +2,55 @@ import Logo from "./Logo";
 import FacebookIcon from "../assets/facebook.svg"
 import InstagramIcon from "../assets/instagram.svg"
 import TwitterIcon from "../assets/twitter.svg"
+import FooterInfoComponent from "./FooterInfoComponent";
 const Footer = () => {
     return (
         <>
             <footer 
-                className="flex flex-col bg-(--dark-gray-2) text-(--white-color) w-full p-5"
+                id="main-footer"
+                className=" bg-(--dark-gray-2) text-(--white-color) p-5"
             >
+            <div
+                id="footer-content-main-div" 
+                className="">
                 <div 
-                    id="footer-logo-div"
-                    className="w-[20%] flex flex-col gap-5"
-                >
-                    <Logo
-                        logoLocal={"Footer"}
-                    />
-                    <p id="footer-desc-p">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum reiciendis reprehenderit recusandae asperiores voluptates architecto sit numquam aut natus aliquam provident, minima totam tenetur quo quidem laborum quam ipsa!
-                    </p>
-                    <div 
-                        id="social-icons-div"
-                        className="flex gap-7"
+                        id="footer-logo-div"
+                        className="gap-5"
                     >
-                        <img src={FacebookIcon}/>
-                        <img src={InstagramIcon}/>
-                        <img src={TwitterIcon}/>
+                        <Logo
+                            logoLocal={"Footer"}
+                        />
+                        <p id="footer-desc-p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum reiciendis reprehenderit recusandae asperiores voluptates architecto sit numquam aut natus aliquam provident, minima totam tenetur quo quidem laborum quam ipsa!
+                        </p>
+                        <div 
+                            id="social-icons-div"
+                            className="flex gap-7"
+                        >
+                            <img src={FacebookIcon}/>
+                            <img src={InstagramIcon}/>
+                            <img src={TwitterIcon}/>
+                        </div>
                     </div>
-                </div>
-                <div id="footer-info-categories-div"></div>
-                <div id="footer-contact-div"></div>
+                    <div 
+                        id="footer-info-categories-div"
+                        className="flex flex-row gap-5"
+                    >
+                        <FooterInfoComponent
+                            title={"Title1"}
+                            information={"Info1"}
+                        />
+                        <FooterInfoComponent
+                            title={"Title2"}
+                            information={"Info2"}
+                        />
+                        <FooterInfoComponent
+                            title={"Title3"}
+                            information={"Info3"}
+                        />
+                    </div>
+            </div>
+                
                 <hr className="mb-2 mt-5"/>
                 <div 
                     id="footer-rights-div"
