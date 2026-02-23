@@ -8,7 +8,7 @@ const Footer = () => {
         <>
             <footer 
                 id="main-footer"
-                className=" bg-(--dark-gray-2) text-(--white-color) p-5"
+                className=" bg-(--dark-gray) text-(--white-color) p-5"
             >
             <div
                 id="footer-content-main-div" 
@@ -34,24 +34,42 @@ const Footer = () => {
                     </div>
                     <div 
                         id="footer-info-categories-div"
-                        className="flex flex-row gap-5"
+                        className="flex"
                     >
                         <FooterInfoComponent
-                            title={"Title1"}
-                            information={"Info1"}
+                            title={"Informações"}
+                            information={
+                                {
+                                    "Sobre":"/about",
+                                    "Segurança":"/security",
+                                    "Wishlist":"/wishlist",
+                                    "Meus Pedidos":"/orders",
+                                    "Trabalhe Conosco":"/workwithus"
+                                }
+                            }
                         />
                         <FooterInfoComponent
-                            title={"Title2"}
-                            information={"Info2"}
+                            title={"Categorias"}
+                            information={{
+                                "Camisetas":"/tshirts",
+                                "Calças":"/pants",
+                                "Tênis":"/sneakers",
+                                "Headphones":"/headphones"
+                            }}
                         />
                         <FooterInfoComponent
-                            title={"Title3"}
-                            information={"Info3"}
+                            title={"Contato"}
+                            information={
+                                {
+                                    "Endereço Genérico":"/local",
+                                    "(85) 9 1234-5678":"/phone"
+                                }
+                            }
                         />
                     </div>
             </div>
                 
-                <hr className="mb-2 mt-5"/>
+                <hr className="mb-2 mt-25"/>
                 <div 
                     id="footer-rights-div"
                     className="w-full flex justify-center"
