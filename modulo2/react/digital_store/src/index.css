@@ -47,12 +47,12 @@ body {
 #footer-content-main-div{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 2em;
 }
 #footer-info-categories-div{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   gap: 2rem;
 }
@@ -112,21 +112,21 @@ body {
   #main-footer{
     padding: 5rem 8rem 1rem 8rem;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
   }
   #footer-content-main-div{
-    display: flex ;
-    flex-direction: row ;
+    display: flex;
+    flex-direction: row;
   }
   #footer-info-categories-div{
+    background-color: red;
     display: flex;
-    float: right;
-    flex-direction: row;
+    flex-direction: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 70%;
   }
   #footer-logo-div{
-    width: 40%;
+    width: 30%;
     margin-right: 15rem;
     gap: 3.5rem;
   }
