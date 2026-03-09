@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
         <>
             <div
                 id = "nav-side-tab"
-                className={`fixed flex flex-col p-5 gap-5 h-screen pb-20 justify-between transition-transform duration-300 text-2xl
+                className={`fixed flex flex-col p-5 gap-5 h-[90vh] pb-10 justify-between transition-transform duration-300 text-xl
                     ${active ? "translate-x-0" : "-translate-x-full"}`}
             >
                 <div

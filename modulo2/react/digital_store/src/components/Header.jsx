@@ -10,6 +10,7 @@ import CartIcon from "./icons/CartIcon";
 const Header = () =>
     {
         const [sideTab, setSideTab] = useState(false);
+        const [searchBar,setSearchBar] = useState(false);
         return (
             <>
 
@@ -42,7 +43,7 @@ const Header = () =>
                 >
                     <div
                         id="sm-header-upbar"    
-                        className="flex flex-row w-full gap-2 justify-between items-center p-2"
+                        className="flex flex-row w-full h-[5vh] gap-2 justify-between items-center p-2"
                     >
                         <div
                             className="order-1 w-[10%] cursor-pointer"
@@ -61,10 +62,11 @@ const Header = () =>
                         </div>
                         <div
                             className="order-3 w-[10%]"
+                            onClick={()=>setSearchBar(!searchBar)}
                         >
                             <SearchIcon
                                 
-                                color={"lightgray"}
+                                color={`${searchBar ? "#C92071" : "lightgray"}`}
                             />
                         </div>
                         <div
@@ -76,6 +78,17 @@ const Header = () =>
                         </div>
                         
                     </div>
+                    <div
+                            id="search-bar" 
+                            className='flex relative w-full p-2'>
+                            <input 
+                                                id="search_bar_header" 
+                                                type="text"
+                                                placeholder="Pesquise o produto aqui"
+                                                className = {`bg-(--light-gray-3) w-full h-10 rounded-md text-(--light-gray) self-center overflow-hidden transition-transform ${searchBar ? "tmax-h-20 opacity-100" : "max-h-0 opacity-0 hidden"}
+                                                    `}
+                            />
+                        </div>
                     <div>
                             <HeaderNavTab
                                 active={sideTab}
