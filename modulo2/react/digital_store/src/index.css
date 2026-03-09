@@ -100,7 +100,8 @@ body {
 /*xl*/
 @media (min-width: 1024px) {
   #main-header {
-    padding: 30px 60px
+    padding: 30px 60px;
+    width: 100%;
   }
   #logo-header{
     width: 243px;
@@ -119,7 +120,6 @@ body {
     flex-direction: row;
   }
   #footer-info-categories-div{
-    background-color: red;
     display: flex;
     flex-direction: flex;
     justify-content: space-around;
