@@ -1,13 +1,14 @@
 import HeaderNav from "./HeaderNav";
 import RedirectArea from "./RedirectArea";
 import { NavLink } from "react-router-dom";
- const HeaderNavTab = () => {
+ const HeaderNavTab = ({active}) => {
     let navLinkActive = "nav-active-link"
     return (
         <>
             <div
                 id = "nav-side-tab"
-                className="fixed flex flex-col p-5 gap-5 h-[90vh] justify-between"
+                className={`fixed flex flex-col p-5 gap-5 h-screen pb-20 justify-between transition-transform duration-300 text-2xl
+                    ${active ? "translate-x-0" : "-translate-x-full"}`}
             >
                 <div
                     id="side-tab-nav"

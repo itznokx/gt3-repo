@@ -1,3 +1,4 @@
+import { use, useState } from "react";
 import HeaderNav from "./HeaderNav";
 import HeaderNavTab from "./HeaderNavTab";
 import Logo from "./Logo";
@@ -8,6 +9,7 @@ import BarsIcons from "./icons/BarsIcon";
 import CartIcon from "./icons/CartIcon";
 const Header = () =>
     {
+        const [sideTab, setSideTab] = useState(false);
         return (
             <>
 
@@ -30,7 +32,7 @@ const Header = () =>
                             cart_items={"99+"}
                         />
                     </div>
-                    <div>
+                    <div >
                         <HeaderNav/>
                     </div>
                 </div>
@@ -43,7 +45,8 @@ const Header = () =>
                         className="flex flex-row w-full gap-2 justify-between items-center p-2"
                     >
                         <div
-                            className="order-1 w-[10%]"
+                            className="order-1 w-[10%] cursor-pointer"
+                            onClick={ () => setSideTab(!sideTab)}
                         >
                             <BarsIcons
                                 color={"black"}
@@ -74,7 +77,9 @@ const Header = () =>
                         
                     </div>
                     <div>
-                            <HeaderNavTab/>
+                            <HeaderNavTab
+                                active={sideTab}
+                            />
                     </div>
                 </div>
                 <hr/>
