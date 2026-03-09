@@ -1,45 +1,24 @@
-import IconShoppingCart from "../assets/mini-cart.svg"
 
-const RedirectArea = ({cart_items}) => {
+const RedirectArea = () => {
     return (
         <>
         <div
             id="header-redirect"
-            className="flex flex-row items-center w-[25%] h-full bg-sky-0 gap-5"
+            className="flex flex-row w-[15%] gap-0 h-full bg-sky-00 pr-2 pl-2"
         >
-            <div
-                className='flex flex-row w-[75%] bg-amber-0 gap-5 justify-center h-1/2 items-center'
+            <button 
+                id="register-button-header"
+                type='button'
+                className='w-[65%] hover:underline cursor-pointer text-(--dark-gray-3)'
             >
-                <button 
-                    id="register-button-header"
-                    type='button'
-                    className='w-[65%] hover:underline cursor-pointer text-(--dark-gray-3)'
-                >
-                    <p>Cadastre-se</p>
-                </button>
-                <button 
-                    id="login-button-header"
-                    className='bg-(--primary-color) text-(--white-color) font-bold rounded-xl pl-10 pr-10 pt-2 pb-2'
-                >
-                    <p>Entrar</p>
-                </button>
-            </div>
-            <div
-                className='flex flex-col w-[25%] items-center bg-green-00 relative'
+                <p>Cadastre-se</p>
+            </button>
+            <button 
+                id="login-button-header"
+                className='bg-(--primary-color) text-(--white-color) font-bold rounded-xl pl-10 pr-10 pt-2 pb-2'
             >
-                
-                <div 
-                    id='number-items-shopping-cart'
-                    className='flex size-4 rounded-full bg-(--primary-color) items-center justify-center text-white -mr-4'
-                >
-                    <p className='text-xs'>{cart_items}</p>
-                </div>
-                <img
-                    className="mb-2"
-                    src={IconShoppingCart}
-                />
-                
-            </div>
+                <p>Entrar</p>
+            </button>
         </div>
         </>
     )

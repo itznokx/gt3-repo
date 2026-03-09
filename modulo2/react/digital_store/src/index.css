@@ -3,7 +3,6 @@
 @layer prime {
   @import "primeicons/primeicons.css";
 }
-
 button {
   cursor: pointer;
 }
@@ -21,8 +20,7 @@ html,body,main {
   text-decoration-thickness: 3px;
 }
 #main-header {
-  display: flex;
-  justify-content: center;
+  display: none;
   padding: 5px 10px 0 10px;
   background-color: var(--white-color);
 }
@@ -64,7 +62,12 @@ body {
 }
 /* 768px = md */
 @media (min-width: 768px) {
+  #sm-header{
+    display: none;
+  }
   #main-header {
+    display: flex;
+    justify-content: center;
     padding: 10px 20px 0 20px;
   }
   #logo-header{
@@ -99,7 +102,12 @@ body {
 
 /*xl*/
 @media (min-width: 1024px) {
+  #sm-header{
+    display: none;
+  }
   #main-header {
+    display: flex;
+    justify-content: center;
     padding: 30px 60px;
     width: 100%;
   }
