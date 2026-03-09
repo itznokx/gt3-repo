@@ -6,9 +6,11 @@ const Logo = ({logoLocal}) => {
     const logo = logoLocal == "Header" ? LogoHeader : LogoFooter;
     console.log(logo)
     return (
+            <div>
+                <img id="logo-header" src={logo} alt="Digital Store header logo"
+                />
+            </div>
             
-            <img id="logo-header" src={logo} alt="Digital Store header logo"
-            />
     );
 }
 export default Logo;

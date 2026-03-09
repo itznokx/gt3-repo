@@ -3,19 +3,18 @@ const CartIcon = ({cart_items}) => {
     return (
         <>
         <div
-                className='bg-green-00 relative'
+                className='w-[5%] flex bg-green-100 items-center justify-center'
             >   
-                <div 
-                    id='number-items-shopping-cart'
-                    className='flex size-4 rounded-full bg-(--error-color) items-center justify-center text-white ml-3 -mb-6 absolute'
-                >
-                    <p className='text-xs'>{cart_items}</p>
-                </div>
                 <img
                     className="mt-1.5"
                     src={IconShoppingCart}
                 />
-                
+                <div 
+                    id='number-items-shopping-cart'
+                    className='flex size-4 rounded-full bg-(--error-color) justify-center text-white mb-3'
+                >
+                    <p className='text-xs'>{cart_items}</p>
+                </div>
             </div>
         </>
     )

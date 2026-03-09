@@ -2,6 +2,8 @@ import HeaderNav from "./HeaderNav";
 import Logo from "./Logo";
 import RedirectArea from "./RedirectArea";
 import SearchBar from "./SearchBar";
+import SearchIcon from "./icons/ SearchIcon";
+import BarsIcons from "./icons/BarsIcon";
 import CartIcon from "./icons/CartIcon";
 const Header = () =>
     {
@@ -14,7 +16,7 @@ const Header = () =>
                 >   
                     <div 
                         id="up-div-header"
-                        className="flex flex-row gap-2 items-center"
+                        className="flex flex-row gap-2 items-center justify-between"
                     >
                         <Logo 
                             logoLocal={"Header"}
@@ -24,7 +26,7 @@ const Header = () =>
                         <RedirectArea/>
 
                         <CartIcon
-                            cart_items={0}
+                            cart_items={"99+"}
                         />
                     </div>
                     <div>
@@ -34,8 +36,39 @@ const Header = () =>
                 <div
                     id="sm-header"
                 >
-                    <div>
-                        
+                    <div
+                        id="sm-header-upbar"    
+                        className="flex flex-row w-full gap-2 justify-between items-center p-2"
+                    >
+                        <div
+                            className="order-1 w-[10%]"
+                        >
+                            <BarsIcons
+                                color={"black"}
+                            />
+                        </div>
+                        <div
+                            className="order-2"
+                        >
+                            <Logo
+                                logoLocal={"Header"}
+                            />
+                        </div>
+                        <div
+                            className="order-3 w-[10%]"
+                        >
+                            <SearchIcon
+                                
+                                color={"lightgray"}
+                            />
+                        </div>
+                        <div
+                            className="order-4 w-[10%]"
+                        >
+                            <CartIcon
+                                cart_items={0}
+                            />
+                        </div>
                     </div>
                 </div>
                 <hr/>
