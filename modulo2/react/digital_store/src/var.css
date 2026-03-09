@@ -16,3 +16,12 @@
     /*size var*/
     --logo-height: 43px;
 }
+button {
+    cursor: pointer;
+}
+html,body,main {
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0;
+      font-size: 1em;
+};

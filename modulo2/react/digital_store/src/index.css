@@ -3,15 +3,7 @@
 @layer prime {
   @import "primeicons/primeicons.css";
 }
-button {
-  cursor: pointer;
-}
-html,body,main {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    font-size: 1em;
-};
+/*sm & default*/
 .nav-active-link {
   font-weight: bold;
   text-decoration: solid underline var(--primary-color) 20px;
@@ -21,6 +13,12 @@ html,body,main {
 }
 #sm-header {
   display: flex;
+  background-color: var(--white-color);
+}
+#nav-side-tab {
+  display: flex;
+  height: calc(100vh-10em);
+  width: 70%;
   background-color: var(--white-color);
 }
 #main-header {
@@ -66,8 +64,14 @@ body {
 }
 /*xl*/
 @media (min-width: 1024px) {
+  #nav-side-tab {
+    display: none;
+  }
   #sm-header{
     display: none;
+  }
+  #header-navigation nav{
+    flex-direction: row;
   }
   #main-header {
     display: flex;

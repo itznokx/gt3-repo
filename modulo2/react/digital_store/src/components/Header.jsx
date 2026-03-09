@@ -1,4 +1,5 @@
 import HeaderNav from "./HeaderNav";
+import HeaderNavTab from "./HeaderNavTab";
 import Logo from "./Logo";
 import RedirectArea from "./RedirectArea";
 import SearchBar from "./SearchBar";
@@ -12,8 +13,8 @@ const Header = () =>
 
                 <div 
                 id="main-header"
-                className="flex fixed w-full gap-10 flex-col"
-                >   
+                    className="flex fixed w-full gap-10 flex-col h-[10em]"
+                >    
                     <div 
                         id="up-div-header"
                         className="flex flex-row gap-2 items-center justify-between"
@@ -35,6 +36,7 @@ const Header = () =>
                 </div>
                 <div
                     id="sm-header"
+                    className="flex fixed w-full flex-col"
                 >
                     <div
                         id="sm-header-upbar"    
@@ -69,6 +71,10 @@ const Header = () =>
                                 cart_items={0}
                             />
                         </div>
+                        
+                    </div>
+                    <div>
+                            <HeaderNavTab/>
                     </div>
                 </div>
                 <hr/>
